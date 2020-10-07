@@ -6,6 +6,8 @@
         <div class="col-md-8">
             <div class="card">
 
+              <a href="{{ route('post.create') }}">CREATE POST</a>
+
                 <ul>
                   @foreach ($posts as $post)
                     <li>
