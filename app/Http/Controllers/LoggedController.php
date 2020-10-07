@@ -40,6 +40,12 @@ class LoggedController extends Controller
     $data = $request->all();
     $post = Post::create($data);
 
+    $user = Auth::user();
+    $action = "CREATE";
+
+    Mail::To('admin@boolean.com')
+          ->send(new UserAction($user, $post, $action));
+
     return redirect() -> route('posts.index');
   }
 
@@ -57,6 +63,12 @@ class LoggedController extends Controller
     $post = Post::findOrFail($id);
 
     $post -> update($data);
+
+    $user = Auth::user();
+    $action = "UPDATE";
+
+    Mail::To('admin@boolean.com')
+          ->send(new UserAction($user, $post, $action));
 
 
     return redirect() -> route('post.show',$id);
