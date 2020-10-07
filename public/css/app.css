@@ -10925,6 +10925,17 @@ h2 {
 #post-index .post-box {
   margin: 20px 0;
   position: relative;
+  border-bottom: 1px solid #6cb2eb;
+  padding-bottom: 10px;
+}
+
+#post-index .post-box .text {
+  color: #3490dc;
+}
+
+#post-index .post-box:hover > *,
+#post-index .post-box:hover > li > a > i {
+  color: #ffed4a;
 }
 
 #post-index .post-box .icon {

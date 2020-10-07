@@ -30,3 +30,30 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM completamente caricato e analizzato');
+
+    var icons = document.getElementsByClassName('fa-teeth-open');
+    console.log(icons);
+
+    openShoutMouth(icons);
+});
+
+function openShoutMouth(array){
+
+  for (var i = 0; i < array.length; i++) {
+
+    array[i].addEventListener('mouseenter', function(ev){
+    console.log("CLICK", this);
+    this.className = 'fas fa-teeth';
+  });
+
+  array[i].addEventListener('mouseleave', function(ev){
+  console.log("CLICK", this);
+  this.className = 'fas fa-teeth-open';
+});
+  }
+
+}

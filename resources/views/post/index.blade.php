@@ -16,11 +16,12 @@
 
                         <li class="icon">
                           <a href="{{ route ('post.show', $post -> id) }}">
-                              <i class="far fa-clipboard"></i>
+                              <i class="fas fa-teeth-open"></i>
+
                           </a>
                         </li>
 
-                        <li class="text-primary">
+                        <li class="text">
                                       TITOLO: {{ $post-> title}}  </li>
 
                         <li>          GENERE: {{ $post-> genre}}  </li>

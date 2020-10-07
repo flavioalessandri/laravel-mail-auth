@@ -26,11 +26,24 @@ h2{
   .post-box{
     margin: 20px 0;
     position: relative;
+    border-bottom: 1px solid #6cb2eb;
+    padding-bottom: 10px;
+
+    .text{
+      color:#3490dc;
+    }
+
+    &:hover > *, &:hover > li > a > i {
+      color: #f66d9b;
+    }
+
 
     .icon{
       position:absolute;
       top:20%;
       left:0;
+
+
 
       i{
         font-size: 16px;
