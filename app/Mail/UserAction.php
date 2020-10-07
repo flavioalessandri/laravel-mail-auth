@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Auth;
 
 class UserAction extends Mailable
 {
@@ -30,7 +31,10 @@ class UserAction extends Mailable
      */
     public function build()
     {
-        return $this-> from("flavio@boolean.com")
-                    -> view('mail.post-mail');
+
+      $user = Auth::user();
+
+      return $this-> from($user -> email)
+                  -> view('mail.post-mail');
     }
 }

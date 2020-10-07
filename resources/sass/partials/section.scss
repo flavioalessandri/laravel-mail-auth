@@ -1,0 +1,42 @@
+
+h2{
+  font-size: 16px;
+  text-align: center;
+}
+
+#home{
+    .typewriter{
+      width:100%;
+
+      img{
+        width:100%;
+        transition: all .2s;
+        }
+
+      &:hover > img{
+        transform: scale(1.03);
+      }
+  }
+}
+
+
+
+#post-index{
+
+  .post-box{
+    margin: 20px 0;
+    position: relative;
+
+    .icon{
+      position:absolute;
+      top:20%;
+      left:0;
+
+      i{
+        font-size: 16px;
+      }
+    }
+  }
+
+
+}

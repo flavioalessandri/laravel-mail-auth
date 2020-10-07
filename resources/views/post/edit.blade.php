@@ -27,12 +27,12 @@
 
     <div class="form-group">
       <label for="like">Like: </label>
-      <input type="number" name="like" value=" {{ $post-> like }} ">
+      <input type="number" name="like" value="{{$post-> like}}">
     </div>
 
     <div class="form-group">
       <label for="dislike">Dislike: </label>
-      <input type="number" name="dislike" value=" {{ $post-> dislike }} ">
+      <input type="number" name="dislike" value="{{$post-> dislike}}">
     </div>
 
     <button type="submit" name="button">UPDATE</button>

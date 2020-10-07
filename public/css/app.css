@@ -10899,6 +10899,44 @@ a.text-dark:focus {
   }
 }
 
+.vertical-bar::after {
+  content: "|";
+  padding: 0 0.5em;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+#home .typewriter {
+  width: 100%;
+}
+
+#home .typewriter img {
+  width: 100%;
+  transition: all 0.2s;
+}
+
+#home .typewriter:hover > img {
+  transform: scale(1.03);
+}
+
+#post-index .post-box {
+  margin: 20px 0;
+  position: relative;
+}
+
+#post-index .post-box .icon {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+#post-index .post-box .icon i {
+  font-size: 16px;
+}
+
 ul {
   list-style: none;
 }
