@@ -7,7 +7,11 @@
             <div class="card">
                 <div class="card-header">
 
-                            <h2>GO TO OUR POSTS</h2>
+                      <h2><a  href="{{ route ('posts.index') }}">
+                            READ OUR POSTS!
+                          </a>
+                      </h2>
+
                 </div>
                 <div class="card-body centered d-flex justify-content-center">
 

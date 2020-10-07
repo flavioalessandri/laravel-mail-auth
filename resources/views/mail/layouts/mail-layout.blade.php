@@ -8,14 +8,21 @@
 
     body {
       padding:50px 30px;
-      color:#343a40;
+      color:white;
     }
 
-    h1,h2{text-align: center;}
+    h1,h2,h3{padding-top: 30px;
+          text-align: center;
+          color: lightgrey;
+        }
+
+    span{
+      color:#f66d9b;
+    }
 
 
     .mail{
-      background-color: #eddcd2;
+      background-color: #212529;
     }
 
 

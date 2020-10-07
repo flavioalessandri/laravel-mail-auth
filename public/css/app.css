@@ -10909,6 +10909,10 @@ h2 {
   text-align: center;
 }
 
+#home {
+  font-family: "Oswald", sans-serif;
+}
+
 #home .typewriter {
   width: 100%;
 }
@@ -10935,17 +10939,33 @@ h2 {
 
 #post-index .post-box:hover > *,
 #post-index .post-box:hover > li > a > i {
-  color: #ffed4a;
+  color: #f66d9b;
 }
 
 #post-index .post-box .icon {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
 }
 
 #post-index .post-box .icon i {
   font-size: 16px;
+  padding-right: 260px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#post-show {
+  font-size: 16px;
+  line-height: 2;
+}
+
+#post-show .buttons {
+  padding-left: 40px;
+}
+
+#post-edit label {
+  min-width: 50px;
 }
 
 ul {

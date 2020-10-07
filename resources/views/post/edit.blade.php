@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="d-flex justify-content-center">
+<div id="post-edit" class="d-flex justify-content-center">
 
 
 
@@ -24,6 +24,7 @@
     <div class="form-group">
       <label for="body">Body: </label>
       <textarea name="body" rows="8" cols="80"  >{{ $post-> body }} </textarea>
+    </div>
 
     <div class="form-group">
       <label for="like">Like: </label>
@@ -35,7 +36,7 @@
       <input type="number" name="dislike" value="{{$post-> dislike}}">
     </div>
 
-    <button type="submit" name="button">UPDATE</button>
+    <button class="btn btn-danger" type="submit" name="button">UPDATE</button>
 
   </form>
 

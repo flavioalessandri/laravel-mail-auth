@@ -6,7 +6,11 @@
         <div class="col-md-8">
             <div class="card">
 
-              <a href="{{ route('post.create') }}">CREATE POST</a>
+              @auth
+
+              <a class="btn btn-danger" href="{{ route('post.create') }}">CREATE POST</a>
+
+              @endauth
 
                 <ul>
                   @foreach ($posts as $post)

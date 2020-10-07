@@ -2,15 +2,27 @@
 
 @section('content')
 
-  <h2>Name: {{ $user -> name }} -- Mail: {{$user -> email}} -- Action: {{ $action}}</h2>
+  <h2><span class="red"> Mail: </span> {{$user -> email}} </h2>
+  <h3><span class="red"> Name: </span> {{ $user -> name }}</h3>
+
+  <h3><span class="red"> Action: </span> {{ $action}}</h2></h3>
+
 
     <ul>
-      <li>TITLE: {{ $post-> title }}</li>
-      <li> GENRE: {{ $post-> genre }}</li>
-      <li>BODY: {{ $post-> body }} </li>
-      <br>
-      <li>Like: {{ $post-> like }} </li>
-      <li>Dislike: {{ $post-> dislike }} </li>
+      <li><span>TITLE: </span>
+        {{ $post-> title }}</li>
+
+      <li> <span>GENRE:</span>
+        {{ $post-> genre }}</li>
+
+      <li><span>BODY:</span>
+        {{ $post-> body }} </li>
+
+      <li><span>Like:</span>
+        {{ $post-> like }} </li>
+
+      <li><span>Dislike:</span>
+        {{ $post-> dislike }} </li>
 
     </ul>
 

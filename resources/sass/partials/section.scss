@@ -4,52 +4,69 @@ h2{
   text-align: center;
 }
 
-#home{
-    .typewriter{
-      width:100%;
+    #home{
 
-      img{
-        width:100%;
-        transition: all .2s;
+      font-family: "Oswald" , sans-serif;
+        .typewriter{
+          width:100%;
+
+          img{
+            width:100%;
+            transition: all .2s;
+            }
+
+          &:hover > img{
+            transform: scale(1.03);
+          }
+      }
+    }
+
+
+    #post-index{
+
+      .post-box{
+        margin: 20px 0;
+        position: relative;
+        border-bottom: 1px solid #6cb2eb;
+        padding-bottom: 10px;
+
+        .text{
+          color:#3490dc;
         }
 
-      &:hover > img{
-        transform: scale(1.03);
-      }
-  }
-}
+        &:hover > *, &:hover > li > a > i {
+          color: #f66d9b;
+        }
 
+        .icon{
+          position:absolute;
+          top:0;
+          left:0;
 
-
-#post-index{
-
-  .post-box{
-    margin: 20px 0;
-    position: relative;
-    border-bottom: 1px solid #6cb2eb;
-    padding-bottom: 10px;
-
-    .text{
-      color:#3490dc;
-    }
-
-    &:hover > *, &:hover > li > a > i {
-      color: #f66d9b;
-    }
-
-
-    .icon{
-      position:absolute;
-      top:20%;
-      left:0;
-
-
-
-      i{
-        font-size: 16px;
+          i{
+            font-size: 16px;
+            padding-right: 260px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+          }
+        }
       }
     }
-  }
 
 
-}
+    #post-show{
+      font-size: 16px;
+      line-height: 2;
+
+      .buttons{
+        padding-left: 40px;
+      }
+    }
+
+
+    #post-edit{
+
+      label{
+        min-width:50px;
+      }
+    }
