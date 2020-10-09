@@ -18,9 +18,10 @@ class CreatePostsTable extends Migration
 
             $table->string('title',120);
             $table->text('genre');
-            $table->text('body');
-            $table->mediumInteger('like');
-            $table->mediumInteger('dislike');
+            $table->longText('body', $maxNbChars = 600, $indexSize = 2);
+            $table->unsignedBigInteger('like');
+            $table->unsignedBigInteger('dislike');
+            $table->string('image',120);
             $table->timestamps();
         });
     }
