@@ -18,6 +18,6 @@ $factory->define(Post::class, function (Faker $faker) {
       'body'        => $faker -> text($maxNbChars = 700),
       'like'        => $faker -> numberBetween($min = 20, $max = 3000),
       'dislike'     => $faker -> numberBetween($min = 20, $max = 3000),
-      'image'       => $faker -> imageUrl($width, $height, 'city')
+      'image'       => $faker -> imageUrl($width, $height)
     ];
 });
